@@ -119,7 +119,7 @@ $(document).ready(function () {
   ////////////** footer transfer into accordion **//////////
 
   if ($(window).width() <= 767) {
-    $(".nav-accordion").addClass("footer-accordion");
+    $(".nav-foot-header").addClass("footer-accordion");
     $(".nav-foot").addClass("footer-panel");
   }
   $(".footer-accordion").click(function () {
@@ -172,6 +172,10 @@ $(document).ready(function () {
       header_animation();
     }
   });
+  var oTop = $(".about-us-section").offset().top - window.innerHeight;
+    if (b == 0 && $(window).scrollTop() > oTop) {
+      header_animation();
+    }
   if ($(window).width() <= 767) {
     header_animation();
   }

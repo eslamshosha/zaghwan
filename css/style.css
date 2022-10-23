@@ -16,6 +16,7 @@ body {
 :root {
   --main-color: #008837;
   --main-hover: #cce7d7;
+  --third-color: #02c752;
   --sec-color: #8b8b8b;
   --white-color: #ffffff;
   --black-color: #000000;
@@ -286,14 +287,12 @@ header {
   color: var(--white-color);
   margin-inline-start: 20px;
   background-color: var(--main-color);
-  border: 1px solid var(--main-color);
   transition: all 0.4s ease-in-out;
 }
 .contact-link:hover {
   text-decoration: none;
-  color: var(--main-color);
-  border: 1px solid var(--main-color);
-  box-shadow: inset 0 0 0 2em var(--white-color);
+  color: var(--white-color);
+  box-shadow: inset 0 0 0 2em var(--third-color);
 }
 /*                          header section                     */
 /*           swiper section                     */
@@ -371,14 +370,12 @@ header {
   font-size: 14px;
   color: var(--white-color);
   background-color: var(--main-color);
-  border: 1px solid var(--main-color);
   transition: all 0.4s ease-in-out;
 }
 .caption-link:hover {
   text-decoration: none;
-  color: var(--main-color);
-  border: 1px solid var(--main-color);
-  box-shadow: inset 0 0 0 2em var(--white-color);
+  color: var(--white-color);
+  box-shadow: inset 0 0 0 2em var(--third-color);
 }
 .main-slider .swiper-btn {
   position: absolute;
@@ -464,15 +461,14 @@ header {
     min-height: 250px;
   }
   .caption-title {
-    font-size: 20px;
+    font-size: 24px;
+    margin-bottom: 15px;
   }
   .caption-pargh {
     font-size: 14px;
     margin-bottom: 12px;
     padding: 0 20px;
-  }
-  html[dir="ltr"] .caption-pargh {
-    font-size: 12px;
+    display: none;
   }
   .caption-link {
     width: 130px;
@@ -547,14 +543,12 @@ html[dir="ltr"] .about-us-head {
   font-size: 14px;
   color: var(--white-color);
   background-color: var(--main-color);
-  border: 1px solid var(--main-color);
   transition: all 0.4s ease-in-out;
 }
 .sec-link:hover {
   text-decoration: none;
-  color: var(--main-color);
-  border: 1px solid var(--main-color);
-  box-shadow: inset 0 0 0 2em var(--white-color);
+  color: var(--white-color);
+  box-shadow: inset 0 0 0 2em var(--third-color);
 }
 @media (max-width: 991px) {
   .about-us-section {
@@ -567,6 +561,13 @@ html[dir="ltr"] .about-us-head {
   .about-us-head {
     font-size: 18px;
     text-align: center;
+  }
+  .about-us-head {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    border-left: none;
+    white-space: unset;
   }
   .about-us-pargh {
     text-align: center;
@@ -1058,7 +1059,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding-bottom: 60px;
   margin-bottom: 70px;
 }
@@ -1338,7 +1339,7 @@ html[dir="rtl"] .footer-accordion.active:after {
   }
   .social {
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
   }
   .contact-ancor i {
     width: 45px;
@@ -1353,7 +1354,7 @@ html[dir="rtl"] .footer-accordion.active:after {
   }
   .nav-foot-cont {
     text-align: start;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
   }
   .nav-foot-header {
     text-align: center;
@@ -1368,7 +1369,7 @@ html[dir="rtl"] .footer-accordion.active:after {
     text-align: center;
   }
   .copy-flex {
-    padding-top: 40px;
+    padding-top: 30px;
     justify-content: center;
     flex-direction: column;
   }
@@ -1490,6 +1491,7 @@ html[dir="rtl"] .footer-accordion.active:after {
     justify-content: center;
     align-items: center;
     font-weight: 700;
+    font-size: 20px;
   }
   /*                    menu in phone size                      */
 }
