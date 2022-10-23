@@ -1414,10 +1414,10 @@ html[dir="rtl"] .footer-accordion.active:after {
   .nav-head {
     display: flex;
     justify-content: flex-start;
-    padding: 25px 0 0;
+    padding: 29px 0 0;
   }
   .fixed-nav .nav-head {
-    padding: 18px 0 0;
+    padding: 26px 0 0;
   }
   .nav-head .dropdown-content {
     background-color: transparent;
